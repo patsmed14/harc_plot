@@ -1,3 +1,4 @@
+
 import shutil,os
 import datetime
 from collections import OrderedDict
@@ -62,6 +63,12 @@ prmd['tec']         = tmp
 
 # Region Dictionary
 regions = {}
+
+tmp     = {}
+tmp['lon_lim']  = (-20.,40.)
+tmp['lat_lim']  = ( 50., 90.)
+regions['aurora_north']    = tmp
+
 tmp     = {}
 tmp['lon_lim']  = (-180.,180.)
 tmp['lat_lim']  = ( -90., 90.)
